@@ -1,15 +1,15 @@
 package u4pp;
 /**
-* YOUR COMMENTS HERE
+* This is, in fact, a palindrome tester. A palindrome is the same forwards and backwards. Think racecar and racecar.
 */
 import java.util.Scanner;
 
 public class PalindromeTester {
     /**
-     * YOUR JAVADOC HERE
+     * @author Ian
      */
     public static void execute(Scanner sc) {
-        /* YOUR CODE HERE */
+        //This guy creates a scanner that lets the user input a phrase/string that gets tested to be a palindrome.
         Scanner pickles = new Scanner(System.in);
         Boolean keepTesting = true;
 
@@ -57,10 +57,11 @@ public class PalindromeTester {
     }
 
     /**
-     * YOUR JAVADOC HERE
+     * @author Ian
+     * @param whatever phrase you want to be tested you tomato!!!!
      */
     public static boolean isPalindrome(String phrase) {
-        /* YOUR CODE HERE */
+        /* This is the actual palindrome function. It flips the word backwards and gets rid of numbers, as well as lowercasing everything. */
         String reversed = "";
         String letter;
         String numbas = "\\d";
@@ -84,5 +85,4 @@ public class PalindromeTester {
         }
     }
 
-    /* Any helper methods you might need */
 }
